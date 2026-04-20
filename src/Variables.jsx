@@ -3,7 +3,6 @@ import { useState } from 'react'
 
 const Variables = () => {
     const [username, setuseranme] = useState("students")
-    const [isshowing, setishowing] = useState(false)
     // console.log(username);
     // console.log(isshowing);
 
@@ -21,6 +20,7 @@ const Variables = () => {
 //    {condinal statement ? "true value" : "false value"}  TERNARY OPERATOR
   return (
     <div>
+      <input type="text" />
        <h1>{user}</h1>
        <h1 className={isshowing ? "text-danger" : "text-success"} >{username}</h1>
        <button onClick={updatestate}>update</button>
