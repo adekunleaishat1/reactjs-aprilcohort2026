@@ -6,12 +6,13 @@ import App2 from "./App2.jsx"
 import Variables from './Variables.jsx'
 import Showpassword from './Showpassword.jsx'
 import Todo from './Todo.jsx'
+import ShowTask from './ShowTask.jsx'
+import { BrowserRouter } from 'react-router-dom'
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-     {/* <App2/> */}
-    {/* <App /> */}
-    <Variables/>
-    {/* <Todo/> */}
-    {/* <Showpassword/> */}
+    <BrowserRouter>
+        <App /> 
+    </BrowserRouter>
   </StrictMode>,
 )
