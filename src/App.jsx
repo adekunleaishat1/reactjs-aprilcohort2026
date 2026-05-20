@@ -9,6 +9,7 @@ import Showpassword from "./Showpassword"
 import ShowTask from "./ShowTask"
 import Http from "./Http"
 import OnePost from "./OnePost"
+import Formik from "./Formik"
 
 function App() {
    const mysty = {
@@ -43,6 +44,7 @@ function App() {
           <Route path="/todo" element={<Todo/>} />
           <Route path="/http" element={<Http/>} />
           <Route path="/one/:id" element={<OnePost/>} />
+          <Route path="/formik" element={<Formik/>} />
           <Route path="*" element={<Notfound/>}/>
           <Route path="/home" element={<Dashboard/>} >
            <Route path="/home/password" element={<Showpassword/>} />
